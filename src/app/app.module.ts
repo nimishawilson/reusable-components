@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
-import { VirtualScrollComponent } from './virtual-scroll/virtual-scroll.component';
+import { VirtualScrollComponent } from './components/virtual-scroll/virtual-scroll.component';
+import { VirtualScrollContainerComponent } from './pages/virtual-scroll-container/virtual-scroll-container.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    VirtualScrollComponent
+    VirtualScrollComponent,
+    VirtualScrollContainerComponent
   ],
   imports: [
     BrowserModule,

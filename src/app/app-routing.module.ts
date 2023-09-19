@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { VirtualScrollComponent } from './virtual-scroll/virtual-scroll.component';
+import { VirtualScrollContainerComponent } from './pages/virtual-scroll-container/virtual-scroll-container.component';
 
 const routes: Routes = [
-  { path: 'virtual-scroll', component: VirtualScrollComponent}
+  { path: 'virtual-scroll', component: VirtualScrollContainerComponent}
 ];
 
 @NgModule({
