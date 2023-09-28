@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 // material modules
 import { MatButtonModule } from '@angular/material/button';
+import { MatGridListModule } from '@angular/material/grid-list';
+
 
 // cdk modules
 import { ScrollingModule } from '@angular/cdk/scrolling';
@@ -10,6 +12,7 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
 const MODULES = [
   // material modules
   MatButtonModule,
+  MatGridListModule,
 
   // cdk modules
   ScrollingModule
