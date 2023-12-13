@@ -1,0 +1,68 @@
+<div class="registration-form-container">
+    <h2>Employer Registration</h2>
+    <form [formGroup]="regForm">
+      <!-- Company Information -->
+      <div class="form-section">
+        <h3>Company Information</h3>
+        <label for="companyName">Company Name:</label>
+        <input type="text" formControlName="companyName" id="companyName" name="companyName" required>
+  
+        <label for="industry">Industry:</label>
+        <input type="text" formControlName="industry" id="industry" name="industry" required>
+  
+        <label for="companySize">Company Size:</label>
+        <input type="text" formControlName="companySize" id="companySize" name="companySize">
+  
+        <label for="companyType">Company Type:</label>
+        <select id="companyType" formControlName="companyType" name="companyType">
+          <option value="startup">Startup</option>
+          <option value="corporation">Corporation</option>
+        </select>
+  
+        <!-- <label for="companyLogo">Company Logo:</label>
+        <input type="file" id="companyLogo" name="companyLogo"> -->
+      </div>
+  
+      <!-- Contact Information -->
+      <!-- <div class="form-section">
+        <h3>Contact Information</h3>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+  
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
+  
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3"></textarea>
+      </div> -->
+  
+      <!-- User Credentials -->
+      <!-- <div class="form-section">
+        <h3>User Credentials</h3>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+  
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div> -->
+  
+      <!-- Additional Information -->
+      <!-- <div class="form-section">
+        <h3>Additional Information</h3>
+        <label for="companyWebsite">Company Website:</label>
+        <input type="url" id="companyWebsite" name="companyWebsite">
+  
+        <label for="socialMedia">Social Media Profiles:</label>
+        <input type="text" id="socialMedia" name="socialMedia">
+  
+        <label for="companyDescription">Company Description:</label>
+        <textarea id="companyDescription" name="companyDescription" rows="5"></textarea>
+  
+        <label for="jobPostingPreferences">Job Posting Preferences:</label>
+        <textarea id="jobPostingPreferences" name="jobPostingPreferences" rows="5"></textarea>
+      </div> -->
+  
+      <button type="submit" (click)="onRegister()">Register</button>
+    </form>
+  </div>
+  
